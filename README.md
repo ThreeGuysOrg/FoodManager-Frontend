@@ -1,2 +1,2 @@
-# Food_Manager-Frontend
+# FoodManager-Frontend
 Frontend repo
