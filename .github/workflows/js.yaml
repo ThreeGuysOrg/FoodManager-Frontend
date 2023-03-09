@@ -22,11 +22,11 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Use Node.js 18.x
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18.x                                # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-        cache: 'npm'
+    # - name: Use Node.js 18.x
+    #   uses: actions/setup-node@v3
+    #   with:
+    #     node-version: 18.x                                # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    #     cache: 'npm'
 
     # - name: Install npm dependencies
     #   run: npm ci /FoodManager                          # See docs https://docs.npmjs.com/cli/v9/commands/npm-ci
