@@ -1,0 +1,23 @@
+name: Sonarcloud analysis
+
+on:
+  push:
+    branches: [main, stage]
+    paths-ignore:
+      - "README.md"
+  pull_request:
+    branches: [main, stage, develop]
+    types: [opened, synchronize, reopened]
+    paths-ignore:
+      - "README.md"
+
+jobs:
+  sonar:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Clone FoodManager-Frontend repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
