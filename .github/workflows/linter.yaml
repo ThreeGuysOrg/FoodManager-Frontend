@@ -2,10 +2,16 @@ name: Code Style Validation
 
 on:
   pull_request:
-    branches: [main, stage, develop]
+    branches: [main, develop]
     types: [opened, synchronize, reopened]
     paths-ignore:
       - "README.md"
+      - "README/*.png"
+      - "README/*.svg"
+      - "README/*.jpeg"
+      - "README/*.jpg"
+      - "README/*.md"
+      - "LICENSE"
 
 jobs:
   validate:
